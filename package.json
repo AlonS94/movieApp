@@ -1,0 +1,88 @@
+{
+  "name": "blog",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@ant-design/icons": "^4.6.2",
+    "@testing-library/jest-dom": "5.14.1",
+    "@testing-library/react": "12.0.0",
+    "@testing-library/user-event": "13.1.9",
+    "@types/yup": "^0.29.12",
+    "antd": "^4.16.6",
+    "axios": "^0.21.1",
+    "classnames": "^2.3.1",
+    "date-fns": "^2.22.1",
+    "dotenv": "^8.2.0",
+    "mobx": "^6.3.2",
+    "mobx-react-lite": "^3.2.0",
+    "node-sass": "^6.0.1",
+    "rc-picker": "^2.5.14",
+    "react": "^17.0.2",
+    "react-dom": "17.0.2",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^4.0.3",
+    "typescript": "4.3.5",
+    "yup": "^0.32.9"
+  },
+  "proxy": "http://3.128.25.165:8080",
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run type-check && lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.(js|jsx|ts|tsx)": [
+      "npm run prettier",
+      "npm run lint:fix",
+      "git add"
+    ]
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "type-check": "tsc --noEmit",
+    "lint": "eslint --cache ./src/**/*.{ts,tsx}",
+    "lint:full": "npm run type-check && npm run lint",
+    "lint:fix": "eslint --cache ./src/**/*.{ts,tsx} --fix",
+    "prettier": "prettier --write src/**/*.{ts,tsx}"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/classnames": "^2.3.0",
+    "@types/jest": "26.0.24",
+    "@types/node": "^16.0.1",
+    "@types/react": "^17.0.14",
+    "@types/react-dom": "^17.0.9",
+    "@types/react-router-dom": "^5.1.8",
+    "@typescript-eslint/eslint-plugin": "^4.28.3",
+    "@typescript-eslint/parser": "^4.28.3",
+    "eslint": "^7.30.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^4.3.0",
+    "lint-staged": "^11.0.0",
+    "prettier": "^2.3.2",
+    "typescript-plugin-css-modules": "^3.4.0"
+  }
+}

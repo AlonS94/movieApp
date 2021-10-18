@@ -1,0 +1,18 @@
+.searchPage {
+  margin: 0 auto;
+  width: 85%;
+  padding-bottom: 20px;
+
+  &_indicators {
+    margin: 20vh auto;
+    width: 100%;
+    text-align: center;
+  }
+  &__alert{
+    margin: 40px auto;
+    max-width: fit-content;
+    &_error{
+      max-width: 300px;
+    }
+  }
+}

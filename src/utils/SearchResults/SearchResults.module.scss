@@ -1,0 +1,9 @@
+:global .ant-list-items{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 10px;
+  @media (min-width: 1070px) {
+    justify-content: space-between;
+  }
+}

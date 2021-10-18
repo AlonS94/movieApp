@@ -1,0 +1,14 @@
+$txtClr: #000000A6;
+$borderClr: #D9D9D9;
+
+.tags {
+  grid-area: tags;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  align-self: flex-end;
+}
+
+:global .ant-tag {
+  margin-right: 0;
+}

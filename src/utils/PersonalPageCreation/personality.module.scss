@@ -1,0 +1,16 @@
+.personality{
+  margin: 0 auto;
+  max-width: 85%;
+  width: fit-content;
+  height: fit-content;
+  &__poster {
+    height: fit-content;
+    object-fit: cover;
+    grid-area: poster;
+    @media (min-width: 935px) {
+      border-radius: 7px 0 0 7px;
+    }
+  }
+}
+
+

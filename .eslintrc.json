@@ -1,0 +1,63 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:react/recommended",
+    "airbnb",
+    "plugin:prettier/recommended",
+    "prettier"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "@typescript-eslint",
+    "prettier"
+  ],
+  "rules": {
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "no-template-curly-in-string": "off",
+    "require-jsdoc": "off",
+    "@typescript-eslint/ban-ts-comment": "off",
+    "@typescript-eslint/ban-types": "off",
+    "semi": "off",
+    "arrow-parens": "off",
+    "react/jsx-props-no-spreading": "off",
+    "jsx-a11y/control-has-associated-label": "off",
+    "arrow-body-style": "off",
+    "linebreak-style": "off",
+    "no-trailing-spaces": "off",
+    "react/jsx-tag-spacing": "off",
+    "import/no-unresolved": "off",
+    "import/extensions": "off",
+    "no-unused-vars": "off",
+    "no-undef": "off",
+    "no-use-before-define": "off",
+    "spaced-comment": "off",
+    "import/order": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "no-console": "off",
+    "react/jsx-filename-extension": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "no-empty-pattern": "off",
+    "react/prop-types": "off",
+    "react/button-has-type": "off",
+    "react/require-default-props": "off",
+    "import/prefer-default-export": "off",
+    "lines-between-class-members": "off",
+    "no-shadow": "off",
+    "no-useless-constructor": "off",
+    "no-empty-function": "off"
+  }
+}
